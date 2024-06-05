@@ -29,7 +29,7 @@ var O_array = [];
 //what happens on clicking any button
 function onClick(btn,num){
     btn.addEventListener("mouseover",() =>{
-        btn.style.background = 'lightgreen';
+        btn.style.background = 'lightgray';
     })
     btn.addEventListener("mouseleave",() =>{
         btn.style.background = '';
@@ -74,6 +74,13 @@ function checkWin(array,winner){
             for (const button of buttons) {
             button.disabled = true;
             }
+            var rest = document.querySelector(".rest");
+            const newButton = document.createElement('button');
+            newButton.textContent = 'Play again!';
+            rest.appendChild(newButton);
+            newButton.addEventListener("click",() =>{
+                window.location.reload();
+            })
         }
     }   
 }

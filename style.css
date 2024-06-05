@@ -29,14 +29,28 @@ hr {
     
 }
 
-button{
+.b{
     width:100px;
     height: 100px;
     background-color: white;
     font-size: 36px;
+    font-weight: bold;
 
 }
 
+.rest{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.rest button{
+    width:150px;
+    height: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif    ;
+
+}
 .content{
     display: flex;
     justify-content: center;

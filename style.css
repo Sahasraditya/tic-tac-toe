@@ -1,0 +1,53 @@
+*{
+    background-color: whitesmoke;
+}
+
+.full{
+    display: flex;
+    flex-direction: column;
+}
+
+.rest{
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid black;
+    width: 100vw;
+    margin: 1em 0;
+    padding: 0;
+  }
+.game{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap:6px;
+    
+}
+
+button{
+    width:100px;
+    height: 100px;
+    background-color: white;
+    font-size: 36px;
+
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+}
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.player-current{
+    display: flex;
+    justify-content: center;
+
+}
